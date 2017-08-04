@@ -1,0 +1,21 @@
+jekyll/.asset-cache
+jekyll/assets/bundle.js
+jekyll/assets/bundle.css
+public/
+node_modules/
+
+### Jekyll ###
+_site/
+.sass-cache/
+.jekyll-metadata
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
+
+### MACOS ###
+.DS_Store

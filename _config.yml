@@ -1,0 +1,49 @@
+permalink: /posts/:title
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+source: jekyll
+destination: public
+
+assets:
+  compress:
+    css: sass
+    js: false
+
+  autowrite: true
+  cache: .asset-cache
+  cache_type: filesystem
+  cdn: www.example.com
+  skip_baseurl_with_cdn: false
+  skip_prefix_with_cdn: false
+  prefix: "/assets"
+  digest: true
+
+  assets:
+    - "*.png"
+    - "bundle.css"
+    - "bundle.js.map"
+    - "*.svg"
+    - "*.eof"
+    - "*.ttf"
+
+  sources:
+    - jekyll/assets/css
+    - jekyll/assets/fonts
+    - jekyll/assets/img
+    - jekyll/assets/projects
+
+  features:
+    liquid: false
+    integrity: true
+    automatic_img_size: true
+    automatic_img_alt : true
+
+exclude: ['node_modules', 'Gemfile', '.asset-cache']
+
+plugins:
+  - jekyll-assets
+  - jekyll_pages_api
